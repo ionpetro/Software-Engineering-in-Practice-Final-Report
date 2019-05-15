@@ -47,15 +47,31 @@
     \label{fig:verticalcell}
 \end{figure}
 %-----
-  
+
   \subsection{Code Quality}
   
-  \begin{figure}[tph!]
-\centerline{\includegraphics[totalheight=3cm]{lint.png}}
-    \caption{Devoted commit on Linting Errors}
-    \label{fig:verticalcell}
+  This section will describe how I assured quality to my code.
+  
+  \subsubsection{Documentation}
+  
+  Documentation plays an important factor for software development. Every method I used was well documented so in this way, every future contributor would not struggle to understand what my code does. Below you can see an example of a documented method.
+  
+  \begin{figure}[h]
+  \centering
+  \begin{minipage}[b]{0.9\textwidth}
+    \includegraphics[width=\textwidth]{doc1.png}
+    \caption{Flower one.}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.9\textwidth}
+    \includegraphics[width=\textwidth]{doc2.png}
+    \caption{Flower two.}
+  \end{minipage}
 \end{figure}
-%-----
+  
+  \subsubsection{Linting Errors}
+  
+ 
   
     My final commit to the project was devoted to code quality. Using a Python Library called pylint I did some code analysis on:
     \begin{itemize}
@@ -63,6 +79,14 @@
     \item Error detection
     \item Refactoring duplicated code
     \end{itemize}
+    
+     \begin{figure}[tph!]
+\centerline{\includegraphics[totalheight=3cm]{lint.png}}
+    \caption{Devoted commit on Linting Errors}
+    \label{fig:verticalcell}
+\end{figure}
+%-----
+    
     
   \subsection{Continuous Integration}
     
@@ -97,18 +121,24 @@
   
   \subsection{GitHub handling}
   
-  Withing this course, apart from the coding, we gained valuable knowledge on Version Control Systems such as git. As you can see below, by the time I understood the value of such a tool, I haven't stop using it. Apart from that, I worked on windows-port branch (since I developed the plugin on Windows) and avoided to commit on master branch, which is basically used for production.
-  
+  Withing this course, apart from the coding, we gained valuable knowledge on Version Control Systems such as git. As you can see below, by the time I understood the value of such a tool, I haven't stop using it. Apart from that, I worked on windows-port branch (since I developed the plugin on Windows) and avoided to commit on master branch, which is basically used for production. 
 \begin{figure}[h]
-\centerline{\includegraphics[totalheight=5cm]{gitcommit.png}}
+\centerline{\includegraphics[totalheight=3cm]{gitcommit.png}}
   \caption{Github commits for 2019}
   \label{fig:verticalcell}
 \end{figure}
 %-----
-
-  
   
   \subsection{Code Review}
+  
+  Finally, the administrator of the repository after reviewing my code finally merged the Pull Request to the original repository.
+  
+  \begin{figure}[h]
+\centerline{\includegraphics[totalheight=3cm]{merged.png}}
+  \caption{Merging PR to original repo}
+  \label{fig:verticalcell}
+\end{figure}
+%-----
   
 \section{Conclusion}
   
