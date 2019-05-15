@@ -27,38 +27,66 @@
   This should have been the most critical phase of the whole process. Github offers a wide variety of projects to choose from, so you have to choose wisely and be very prudent. But once you do a thorough research, you should find something that fits you perfectly. And that's what happened with me.
   
 \paragraph{}
-  Jarvis by Sukeesh is an open source project, inspired by Tony's Stark AI system \cite{Jarvis} and is available for Linux, MacOS and Windows. In a few words, Jarvis is a simple personal assistant which works on the terminal and he can do many things such as tell you the weather, find restaurants near you and help you out with many types of calculations.
+  \textbf{Jarvis by Sukeesh} is an open source project written in Python, inspired by Tony's Stark AI system \cite{Jarvis} and available for Linux, MacOS and Windows. In a few words, Jarvis is a simple personal assistant which works on the terminal and he can do many things such as tell you the weather, find restaurants near you and help you out with many types of calculations.
 
 \paragraph{}
-  To be able to understand the project structure, I dedicated a few days testing the features and reading the code and the contribution rules (checked out the PEP 8 guidlines for Python) in order to get familiar with it. In the beggining, chaos prevaled but as I was spending more time with it, it started becoming more clear. After 3 - 4 days, I was able to understand the code structure, so I thought that it's time to get my hands dirty.
+  To be able to understand the project structure, I dedicated a few days testing the features and reading the code and the contribution rules (checked out the PEP 8 guidelines for Python) in order to get familiar with it. In the beggining, chaos prevaled but as I was spending more time with it, it started becoming more clear. After 3 - 4 days, I was able to understand the code structure, so I thought that it's time to get my hands dirty.
 
 \section{Project Contribution}
 
+  To the fun part now, it is time to write code. What I though would be a great idea for Jarvis was to create a plugin that Measures your Body Mass Index and outputs some valuable results.    
   
-  \subsection{}
+  \subsection{Change Log}
   
-\section{Internal \& External Communication}  
- 
-% Use this for pictures
+  What I had in mind was an interactive BMI plugin that is easy to use and gives value to the results. Thus, I developed the plugin in Python in about 171 lines of code. Moreover, I refactored the health plugins packaging, due to the fact that they were not easily accessable by the user.
+  
+  % Use this for pictures
 \begin{figure}[tph!]
-\centerline{\includegraphics[totalheight=6cm]{favicon.png}}
-    \caption{used by}
+\centerline{\includegraphics[totalheight=4cm]{contributor.png}}
+    \caption{Jarvis contributors list by GitHub}
     \label{fig:verticalcell}
 \end{figure}
 %-----
-
-\subsection{Something}
-
-    Width of changes
-    Quality of implementation
-    Completion
-    Check
-    Working with development team
-    Presentations
-    Deliverable quality
-    Organization in GitHub (wiki, issues, commits, branching)
-    Reviewing Code Entries - code reviews
+  
+  \subsection{Code Quality}
+  
+  \begin{figure}[tph!]
+\centerline{\includegraphics[totalheight=3cm]{lint.png}}
+    \caption{Devoted commit on Linting Errors}
+    \label{fig:verticalcell}
+\end{figure}
+%-----
+  
+    My final commit to the project was devoted to code quality. Using a Python Library called pylint I did some code analysis on:
+    \begin{itemize}
+    \item Coding standard (variable names, PEP8 style guide, check imported modules usability)
+    \item Error detection
+    \item Refactoring duplicated code
+    \end{itemize}
     
+  \subsection{Continuous Integration}
+    
+    Jarvis is using Travis CI for Continuous Integration. This part is very important, since the code that you contribute to a project has no meaning and is not going to be accepted if it can not be integrated with the rest of the code. Unfortunately, in the refactoring phase, the plugin of another contributor had some linting errors, so Travis was not able to pass the building phase. However, after contacting the administrator of the project, he undertook the issue and fixed it in one line of code. These things always happen, the important thing is to solve them immediately in communication with the developing team.
+      
+  \subsection{Testing}
+  
+    Coding in python, which is a scripting language, you have to write some unit tests in order to test the methods functionality. That's what I did and trust me when I say that the development team was so happy about that. Using the unittest library I wrote 5 different test cases for 2 of my methods.
+  
+\section{Internal \& External Communication}
+
+    Luckily for me, the development team of Jarvis is very friendly and helpful. Each time I had a difficulty with the code structure, they responded very fast showing me the way through the solution.
+ 
+  \subsection{Development Team integration}
+  
+  \subsection{Presentations}
+  
+  \subsection{Quality of Deliverables}
+  
+  \subsection{GitHub handling}
+  
+  \subsection{Code Review}
+  
+  
 \begin{thebibliography}{9}
 
 \bibitem{Forbes} 
